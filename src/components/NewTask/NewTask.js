@@ -11,7 +11,9 @@ const NewTask = (props) => {
     setIsLoading(true);
     setError(null);
     try {
-      const url = "https://react-http-default-rtdb.firebaseio.com/";
+      const url =
+        "https://react-http-44a66-default-rtdb.firebaseio.com/tasks.json";
+      // const url = "https://react-http-default-rtdb.firebaseio.com/";
 
       const response = await fetch(url, {
         method: "POST",
